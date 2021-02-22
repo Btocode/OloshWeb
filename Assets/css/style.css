@@ -3,14 +3,15 @@
     padding: 0px;
 }
 body {
+    font-size: 100%;
   font-family: sans-serif;
 }
 
-.navContainer{
-    display:flex;
-    justify-content:flex-end;
-    
-}
+ div,ul,li,span,section,a{
+     box-sizing: border-box;
+ }
+
+
 .bgcontainer{
     position: relative;
     text-align: center;
@@ -18,6 +19,51 @@ body {
     display: flex;
     justify-content:center;
 }
+
+
+
+.bgcontainer .Header{
+    position: fixed;
+    height:50px;
+    width: 100%;
+    background-color: #00BA9A;
+    z-index: 100;
+    display: flex;
+}
+.bgcontainer .Header .icon{
+    width:30%;
+    height:50px;
+}
+.bgcontainer .Header .icon img{
+    height:50px;
+    width: 50px;
+}
+.bgcontainer .Header .menu{
+    width:65%;
+    height: 50px;
+    display: flex;
+    justify-content:flex-end;
+}
+.bgcontainer .Header .menu ul li{
+    display:inline-block;
+    margin-top: 10px;
+    
+}
+.bgcontainer .Header .menu ul li a{
+    text-decoration: none;
+    margin: 10px 15px;
+    padding: 10px 25px;
+    border-radius:20% 20% 20% 20%;
+    color: black;   
+}
+.bgcontainer .Header .menu ul li a:hover{
+    color:rgb(238, 220, 220);
+}
+
+
+
+
+
 .bglogo{
     position: absolute;
     z-index: 10;
