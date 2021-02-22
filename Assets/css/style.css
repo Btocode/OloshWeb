@@ -5,6 +5,12 @@
 body {
   font-family: sans-serif;
 }
+
+.navContainer{
+    display:flex;
+    justify-content:flex-end;
+    
+}
 .bgcontainer{
     position: relative;
     text-align: center;
@@ -15,15 +21,19 @@ body {
 .bglogo{
     position: absolute;
     z-index: 10;
-    top: 100px;
-    left: 156px;
+    top: 117px;
+    left: 124px;
 }
 .bglogo p{
-    color: red;
-    font-size:25px;
+    color: #FFD500;
+    font-size:45px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    text-transform: uppercase;
     
+}
+.bglogo p span{
+    color: #FF9848;
 }
 
 .bgcontainer img{
@@ -153,7 +163,7 @@ body {
 .footerContainer{
     width: 100%;
     height: 350px;
-    background-color: grey;
+    background-color: #333232;
     display:flex;
     justify-content:space-around;
    
@@ -162,12 +172,12 @@ body {
 .footerEnd{
     display:flex;
     justify-content: center;
-    background-color: grey;
+    background-color: #333232;
+    
 }
 .footerEnd p{
     color:whitesmoke;
     font-family: sans-serif;
-
 }
 .footerEnd p a{
     color:rgb(0, 186, 154);
@@ -215,6 +225,7 @@ body {
 .footerContainer .fourth li{
     list-style:none;
     margin-top:15px;
+    color:rgb(218, 213, 213);
 }
 .footerContainer .fourth li:hover{
     cursor: pointer;
