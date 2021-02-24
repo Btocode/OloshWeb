@@ -35,5 +35,11 @@
     border: 1px solid #ccc;
     border-radius:50%;
 }
-
+.tablerow button a{
+    text-decoration: none;
+    color: #28A745;
+}
+.tablerow button a:hover{
+    color:#fff;
+}
 
