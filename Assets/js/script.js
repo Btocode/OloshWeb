@@ -21,24 +21,24 @@ function loadList() {
   list.forEach((item) => {
     temp += `<li class = "list-item"> ${item} </li>`;
   });
-  temp += `</ul>`;
-  output.innerHTML = temp;
+  //temp += `</ul>`;
+  //output.innerHTML = temp;
 }
 
 function filter(e) {
-  let temp = '';
-  const result = list.filter(item=> item.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()));
-  
-  if(result.length > 0){
-      temp = `<ul class = "list-items">`;
-      result.forEach((item) => {
-          temp += `<li class = "list-item"> ${item} </li>`
-      });
-      temp += `</ul>`;
-  }
-  else{
-      temp = `<div class = "no-item"> No Item Found </div>`;
+  let temp = "";
+  const result = list.filter((item) =>
+    item.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
+  );
+
+  if (result.length > 0) {
+    temp = `<ul class = "list-items">`;
+    result.forEach((item) => {
+      temp += `<li class = "list-item"> ${item} </li>`;
+    });
+    temp += `</ul>`;
+  } else {
+    temp = `<div class = "no-item"> No Item Found </div>`;
   }
   output.innerHTML = temp;
 }
-
